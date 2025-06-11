@@ -1,0 +1,170 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Hien",
+      "phone": "0979479550",
+      "password": "Hien1712!"
+    },
+    {
+      "name": "Hien1",
+      "phone": "0123456789",
+      "password": "123456",
+      "id": "2"
+    },
+    {
+      "name": "Hien12",
+      "phone": "123",
+      "password": "123",
+      "id": "3"
+    }
+  ],
+  "menu": [
+    {
+      "name": "Pizza",
+      "price": 70000,
+      "des": "Pizza phô mai và nhiều topping khác",
+      "img": "pizza.png",
+      "id": "1"
+    },
+    {
+      "name": "Burger Bò",
+      "price": 50000,
+      "des": "Burger bò , cà chua , hành tây, rau sống",
+      "img": "burger.png",
+      "id": "2"
+    },
+    {
+      "name": "Pasta",
+      "price": 80000,
+      "des": "Mì ống kem và nước sốt",
+      "img": "pasta.png",
+      "id": "3"
+    },
+    {
+      "name": "Gà rán",
+      "price": 60000,
+      "des": "Ức gà",
+      "img": "garan.png",
+      "id": "c522"
+    }
+  ],
+  "cart": [
+    {
+      "id": "2",
+      "name": "Burger Bò",
+      "price": 50000,
+      "des": "Burger bò , cà chua , hành tây, rau sống",
+      "img": "burger.png",
+      "quantity": 3
+    },
+    {
+      "id": "3",
+      "name": "Pasta",
+      "price": 80000,
+      "des": "Mì ống kem và nước sốt",
+      "img": "pasta.png",
+      "quantity": 1
+    },
+    {
+      "id": "c522",
+      "name": "Gà rán",
+      "price": 60000,
+      "des": "Ức gà",
+      "img": "garan.png",
+      "quantity": 1
+    }
+  ],
+  "order": [
+    {
+      "id": "9e35",
+      "products": [
+        {
+          "id": "2",
+          "name": "Burger Bò",
+          "price": 50000,
+          "des": "Burger bò , cà chua , hành tây, rau sống",
+          "img": "burger.png",
+          "quantity": 2
+        },
+        {
+          "id": "3",
+          "name": "Pasta",
+          "price": 80000,
+          "des": "Mì ống kem và nước sốt",
+          "img": "pasta.png",
+          "quantity": 1
+        },
+        {
+          "id": "c522",
+          "name": "Gà rán",
+          "price": 60000,
+          "des": "Ức gà",
+          "img": "garan.png",
+          "quantity": 1
+        }
+      ],
+      "status": "Chờ xác nhận"
+    },
+    {
+      "id": "aa51",
+      "products": [
+        {
+          "id": "2",
+          "name": "Burger Bò",
+          "price": 50000,
+          "des": "Burger bò , cà chua , hành tây, rau sống",
+          "img": "burger.png",
+          "quantity": 3
+        },
+        {
+          "id": "3",
+          "name": "Pasta",
+          "price": 80000,
+          "des": "Mì ống kem và nước sốt",
+          "img": "pasta.png",
+          "quantity": 1
+        },
+        {
+          "id": "c522",
+          "name": "Gà rán",
+          "price": 60000,
+          "des": "Ức gà",
+          "img": "garan.png",
+          "quantity": 1
+        }
+      ],
+      "status": "Chờ xác nhận"
+    },
+    {
+      "id": "a6fc",
+      "products": [
+        {
+          "id": "2",
+          "name": "Burger Bò",
+          "price": 50000,
+          "des": "Burger bò , cà chua , hành tây, rau sống",
+          "img": "burger.png",
+          "quantity": 3
+        },
+        {
+          "id": "3",
+          "name": "Pasta",
+          "price": 80000,
+          "des": "Mì ống kem và nước sốt",
+          "img": "pasta.png",
+          "quantity": 1
+        },
+        {
+          "id": "c522",
+          "name": "Gà rán",
+          "price": 60000,
+          "des": "Ức gà",
+          "img": "garan.png",
+          "quantity": 1
+        }
+      ],
+      "status": "Chờ xác nhận"
+    }
+  ]
+}
