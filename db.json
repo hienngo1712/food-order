@@ -47,34 +47,23 @@
       "des": "Ức gà",
       "img": "garan.png",
       "id": "c522"
-    }
-  ],
-  "cart": [
-    {
-      "id": "2",
-      "name": "Burger Bò",
-      "price": 50000,
-      "des": "Burger bò , cà chua , hành tây, rau sống",
-      "img": "burger.png",
-      "quantity": 3
     },
     {
-      "id": "3",
-      "name": "Pasta",
-      "price": 80000,
-      "des": "Mì ống kem và nước sốt",
-      "img": "pasta.png",
-      "quantity": 1
+      "id": "bc0f",
+      "name": "7UP",
+      "price": 15000,
+      "des": "Đồ uống có ga\n",
+      "img": "7up.png"
     },
     {
-      "id": "c522",
-      "name": "Gà rán",
-      "price": 60000,
-      "des": "Ức gà",
-      "img": "garan.png",
-      "quantity": 1
+      "id": "22b5",
+      "name": "Pepsi",
+      "price": 15000,
+      "des": "Đồ uống có ga",
+      "img": "pepsi.png"
     }
   ],
+  "cart": [],
   "order": [
     {
       "id": "9e35",
@@ -137,7 +126,7 @@
       "status": "Chờ xác nhận"
     },
     {
-      "id": "a6fc",
+      "id": "229f",
       "products": [
         {
           "id": "2",
@@ -161,6 +150,50 @@
           "price": 60000,
           "des": "Ức gà",
           "img": "garan.png",
+          "quantity": 1
+        }
+      ],
+      "status": "Chờ xác nhận"
+    },
+    {
+      "id": "c8d5",
+      "products": [
+        {
+          "id": "1",
+          "name": "Pizza",
+          "price": 70000,
+          "des": "Pizza phô mai và nhiều topping khác",
+          "img": "pizza.png",
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "name": "Burger Bò",
+          "price": 50000,
+          "des": "Burger bò , cà chua , hành tây, rau sống",
+          "img": "burger.png",
+          "quantity": 1
+        }
+      ],
+      "status": "Chờ xác nhận"
+    },
+    {
+      "id": "389f",
+      "products": [
+        {
+          "id": "1",
+          "name": "Pizza",
+          "price": 70000,
+          "des": "Pizza phô mai và nhiều topping khác",
+          "img": "pizza.png",
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "name": "Burger Bò",
+          "price": 50000,
+          "des": "Burger bò , cà chua , hành tây, rau sống",
+          "img": "burger.png",
           "quantity": 1
         }
       ],

@@ -6,6 +6,7 @@ import Menu from "../views/Menu.vue"
 import MenuManagement from "../views/MenuManagement.vue"
 import Cart from "../views/Cart.vue"
 import Order from "../views/Order.vue"
+// import UserLayout from "../layouts/UserLayout.vue"
 
 const routes = [
     {
@@ -21,7 +22,7 @@ const routes = [
         component: Register,
     },
     {
-        path:"/users",
+        path:"/user-management",
         component: UserManagement,
     },
     {
@@ -33,13 +34,22 @@ const routes = [
         component: Cart,
     },
     {
-        path:"/order",
+        path:"/admin/order",
+        component: Order,
+    },
+    {
+        path:"/kitchen/order",
+        component: Order,
+    },
+    {
+        path:"/user/order",
         component: Order,
     },
     {
         path:"/menu-management",
         component: MenuManagement,
     },
+    
 ];
 const router = createRouter({
     history: createWebHistory(),

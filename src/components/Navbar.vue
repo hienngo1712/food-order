@@ -22,7 +22,10 @@ const logout = () => {
       <div class="space-x-4">
         <router-link to="/menu" class="hover:underline">Menu</router-link>
         <router-link to="/cart" class="hover:underline">Cart</router-link>
-        <router-link v-if="isAuthenticated" to="/users" class="hover:underline"
+        <router-link
+          v-if="isAuthenticated"
+          to="/user-management"
+          class="hover:underline"
           >Users</router-link
         >
         <router-link v-if="!isAuthenticated" to="/login" class="hover:underline"
