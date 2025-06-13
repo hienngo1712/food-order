@@ -1,7 +1,6 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import axios from "axios";
-import UserLayout from "../layouts/UserLayout.vue";
 
 // Khai báo biến reactive để lưu danh sách món ăn từ API
 const menuItems = ref([]);
@@ -49,44 +48,42 @@ const addToCart = async (item) => {
 onMounted(fetchMenu);
 </script>
 <template>
-  <UserLayout>
-    <div class="min-h-screen p-8 bg-gray-100">
-      <h2 class="text-3xl font-bold mb-6 text-center uppercase">Menu</h2>
-      <div class="flex justify-center text-xl">
-        <button
-          class="bg-cyan-500 text-white px-4 py-2 mb-6 rounded-full hover:bg-cyan-600"
-        >
-          <router-link to="/menu-management">Thêm/Sửa Menu</router-link>
-        </button>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div
-          v-for="item in menuItems"
-          :key="item.id"
-          class="bg-white p-4 mb-2 rounded-2xl shadow-lg"
-        >
-          <div class="flex justify-center items-center">
-            <img
-              :src="`/images/${item.img}`"
-              class="h-90 w-120 object-cover object-center rounded-2xl"
-            />
-          </div>
+  <div class="min-h-screen p-8 bg-gray-100">
+    <h2 class="text-3xl font-bold mb-6 text-center uppercase">Menu</h2>
+    <!-- <div class="flex justify-center text-xl">
+      <button
+        class="bg-cyan-500 text-white px-4 py-2 mb-6 rounded-full hover:bg-cyan-600"
+      >
+        <router-link to="/menu-management">Thêm/Sửa Menu</router-link>
+      </button>
+    </div> -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div
+        v-for="item in menuItems"
+        :key="item.id"
+        class="bg-white p-4 mb-2 rounded-2xl shadow-lg"
+      >
+        <div class="flex justify-center items-center">
+          <img
+            :src="`/images/${item.img}`"
+            class="h-90 w-120 object-cover object-center rounded-2xl"
+          />
+        </div>
 
-          <h3 class="text-lg font-semibold mt-6 text-center">
-            {{ item.name }}
-          </h3>
-          <p class="text-gray-600 mt-1 text-center">{{ item.des }}</p>
-          <p class="text-green-600 font-bold text-right">{{ item.price }}đ</p>
-          <div class="flex justify-center">
-            <button
-              @click="addToCart(item)"
-              class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600"
-            >
-              Thêm vào giỏ hàng
-            </button>
-          </div>
+        <h3 class="text-lg font-semibold mt-6 text-center">
+          {{ item.name }}
+        </h3>
+        <p class="text-gray-600 mt-1 text-center">{{ item.des }}</p>
+        <p class="text-green-600 font-bold text-right">{{ item.price }}đ</p>
+        <div class="flex justify-center">
+          <button
+            @click="addToCart(item)"
+            class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600"
+          >
+            Thêm vào giỏ hàng
+          </button>
         </div>
       </div>
     </div>
-  </UserLayout>
+  </div>
 </template>

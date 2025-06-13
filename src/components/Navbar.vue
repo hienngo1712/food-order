@@ -2,11 +2,10 @@
 import { ref, computed } from "vue";
 import { useRouter } from "vue-router";
 
-const user = ref(localStorage.getItem("users"));
 const router = useRouter();
-const isAuthenticated = computed(() => {
-  return !!user.value;
-});
+const user = ref(JSON.parse(localStorage.getItem("users")));
+const isAuthenticated = computed(() => !!user.value);
+const currentRole = computed(() => user.value?.role);
 
 const logout = () => {
   localStorage.clear();
@@ -20,13 +19,45 @@ const logout = () => {
         >Food Order App</router-link
       >
       <div class="space-x-4">
-        <router-link to="/menu" class="hover:underline">Menu</router-link>
-        <router-link to="/cart" class="hover:underline">Cart</router-link>
         <router-link
-          v-if="isAuthenticated"
-          to="/user-management"
+          v-if="currentRole !== 'admin' && currentRole !== 'kitchen'"
+          to="/menu"
           class="hover:underline"
-          >Users</router-link
+          >Menu</router-link
+        >
+        <router-link
+          v-if="currentRole !== 'admin' && currentRole !== 'kitchen'"
+          to="/cart"
+          class="hover:underline"
+          >Cart</router-link
+        >
+        <router-link
+          v-if="isAuthenticated && currentRole === 'admin'"
+          to="/admin/user-management"
+          class="hover:underline"
+          >Users Management</router-link
+        >
+        <router-link
+          v-if="
+            isAuthenticated &&
+            (currentRole === 'admin' || currentRole === 'kitchen')
+          "
+          :to="
+            currentRole === 'admin'
+              ? '/admin/menu-management'
+              : '/kitchen/menu-management'
+          "
+          class="hover:underline"
+          >Menu Management</router-link
+        >
+        <router-link
+          v-if="
+            isAuthenticated &&
+            (currentRole === 'admin' || currentRole === 'kitchen')
+          "
+          :to="currentRole === 'admin' ? '/admin/order' : '/kitchen/order'"
+          class="hover:underline"
+          >Order</router-link
         >
         <router-link v-if="!isAuthenticated" to="/login" class="hover:underline"
           >Login</router-link
