@@ -8,6 +8,27 @@
       "role": "admin"
     },
     {
+      "id": "2",
+      "name": "Hien1",
+      "phone": "0123456789",
+      "password": "123456",
+      "role": "kitchen"
+    },
+    {
+      "id": "3",
+      "name": "Hien12",
+      "phone": "123",
+      "password": "123",
+      "role": "user"
+    },
+    {
+      "id": "4",
+      "name": "bep",
+      "phone": "1111",
+      "password": "123",
+      "role": "kitchen"
+    },
+    {
       "id": "5",
       "name": "Admin",
       "phone": "8888",
@@ -15,25 +36,11 @@
       "role": "admin"
     },
     {
-      "name": "Hien1",
-      "phone": "0123456789",
-      "password": "123456",
-      "id": "2",
-      "role": "kitchen"
-    },
-    {
-      "name": "Hien12",
-      "phone": "123",
+      "name": "0000",
+      "phone": "0000",
       "password": "123",
-      "id": "3",
-      "role": "user"
-    },
-    {
-      "name": "bep",
-      "phone": "1111",
-      "password": "123",
-      "id": "4",
-      "role": "kitchen"
+      "role": "user",
+      "id": "93f4"
     }
   ],
   "menu": [
@@ -84,6 +91,7 @@
   "order": [
     {
       "id": "9e35",
+      "username": "Hien",
       "products": [
         {
           "id": "2",
@@ -114,6 +122,7 @@
     },
     {
       "id": "aa51",
+      "username": "Hien",
       "products": [
         {
           "id": "2",
@@ -144,6 +153,7 @@
     },
     {
       "id": "229f",
+      "username": "Hien",
       "products": [
         {
           "id": "2",
@@ -171,6 +181,82 @@
         }
       ],
       "status": "Chờ xác nhận"
+    },
+    {
+      "id": "7f89",
+      "username": "Hien12",
+      "products": [
+        {
+          "id": "2",
+          "name": "Burger Bò",
+          "price": 50000,
+          "des": "Burger bò , cà chua , hành tây, rau sống",
+          "img": "burger.png",
+          "quantity": 1
+        },
+        {
+          "id": "3",
+          "name": "Pasta",
+          "price": 80000,
+          "des": "Mì ống kem và nước sốt",
+          "img": "pasta.png",
+          "quantity": 1
+        }
+      ],
+      "status": "Đang chế biến"
+    },
+    {
+      "id": "3168",
+      "username": "0000",
+      "products": [
+        {
+          "id": "1",
+          "name": "Pizza",
+          "price": 70000,
+          "des": "Pizza phô mai và nhiều topping khác",
+          "img": "pizza.png",
+          "quantity": 1
+        }
+      ],
+      "status": "Đã giao"
+    },
+    {
+      "id": "6100",
+      "username": "0000",
+      "products": [
+        {
+          "id": "bc0f",
+          "name": "7UP",
+          "price": 15000,
+          "des": "Đồ uống có ga",
+          "img": "7up.png",
+          "quantity": 1
+        },
+        {
+          "id": "c522",
+          "name": "Gà rán",
+          "price": 60000,
+          "des": "Ức gà",
+          "img": "garan.png",
+          "quantity": 1
+        }
+      ],
+      "status": "Chờ xác nhận"
+    },
+    {
+      "id": "005f",
+      "username": "Hien12",
+      "products": [
+        {
+          "id": "bc0f",
+          "name": "7UP",
+          "price": 15000,
+          "des": "Đồ uống có ga",
+          "img": "7up.png",
+          "quantity": 1
+        }
+      ],
+      "status": "Đã giao"
     }
   ]
 }

@@ -77,7 +77,7 @@ const deleteUser = async (id) => {
 <template>
   <div class="min-h-screen p-8 bg-gray-100">
     <h2 class="text-3xl font-bold mb-6 text-center uppercase">Quản lý User</h2>
-    <div class="max-w-4xl mx-auto">
+    <div class="max-w-3xl mx-auto">
       <h3 class="text-xl font-semibold mb-4 text-center">Thêm/Sửa User</h3>
       <div class="space-y-4">
         <input

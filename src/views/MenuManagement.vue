@@ -82,13 +82,6 @@ const handleFile = (event) => {
       Quản lý món ăn
     </h2>
     <div class="max-w-3xl mx-auto">
-      <div class="flex justify-center text-xl">
-        <button
-          class="bg-cyan-500 text-white px-4 py-2 mb-6 rounded-full hover:bg-cyan-600"
-        >
-          <router-link to="/menu">Trở lại Menu</router-link>
-        </button>
-      </div>
       <div class="space-y-4">
         <input
           type="text"

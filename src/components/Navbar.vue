@@ -32,6 +32,12 @@ const logout = () => {
           >Cart</router-link
         >
         <router-link
+          v-if="currentRole !== 'admin' && currentRole !== 'kitchen'"
+          to="/your-order"
+          class="hover:underline"
+          >Your Order</router-link
+        >
+        <router-link
           v-if="isAuthenticated && currentRole === 'admin'"
           to="/admin/user-management"
           class="hover:underline"

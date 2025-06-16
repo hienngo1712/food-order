@@ -43,9 +43,14 @@ const currentRole = computed(() => user.value?.role);
 const orderItems = async () => {
   if (cartItems.value.length === 0) return;
   try {
+    const username = JSON.parse(localStorage.getItem("users")).name;
     const cartSnapshot = [...cartItems.value];
     // phải dùng [...cartItem.value] để lấy tất cả dữ liệu trong giỏ hàng -> đơn hàng
-    const newOrder = { products: cartSnapshot, status: "Chờ xác nhận" };
+    const newOrder = {
+      username: username,
+      products: cartSnapshot,
+      status: "Chờ xác nhận",
+    };
     //Gửi đơn hàng mới vào order
     await axios.post("http://localhost:3000/order", newOrder);
     //Xóa toàn bộ cart
@@ -116,7 +121,6 @@ const orderItems = async () => {
           class="bg-cyan-500 text-white px-2 py-1 rounded hover:bg-cyan-600"
         >
           <router-link to="/login">Vui lòng đăng nhập</router-link>
-          <!-- {{ !isAuthenticated ? "Vui lòng đăng nhập" : "Xác nhận đơn hàng" }} -->
         </button>
       </div>
       <div v-else class="text-right text-xl mt-5 mr-2">

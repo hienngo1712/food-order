@@ -6,6 +6,7 @@ import Menu from "../views/Menu.vue";
 import MenuManagement from "../views/MenuManagement.vue";
 import Cart from "../views/Cart.vue";
 import Order from "../views/Order.vue";
+import UserOrder from "../views/UserOrder.vue";
 import UserLayout from "../layouts/UserLayout.vue";
 import AdminLayout from "../layouts/AdminLayout.vue"
 import KitchenLayout from "../layouts/KitchenLayout.vue"
@@ -23,6 +24,10 @@ const routes = [
   {
     path:"/cart",
     component: withDefaultLayout(Cart),
+  },
+  {
+    path:"/your-order",
+    component: withDefaultLayout(UserOrder),
   },
   {
     path:"/login",
